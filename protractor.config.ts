@@ -24,8 +24,10 @@ exports.config = {
   onPrepare: function() {
     let globals = require('protractor');
     let browser: ProtractorBrowser = globals.browser;
-    let Reporter = require('weird-reporter');
-    jasmine.getEnv().addReporter(new Reporter( browser.params ));
+    // let Reporter = require('weird-reporter');
+    // jasmine.getEnv().addReporter(new Reporter( browser.params ));
+    let Reporter_xlsx = require('xlsx_reporter');
+    jasmine.getEnv().addReporter(new Reporter_xlsx( browser.params ));
   },
 
   jasmineNodeOpts: {

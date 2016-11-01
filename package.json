@@ -40,12 +40,14 @@
     "canonical-path": "0.0.2",
     "http-server": "^0.9.0",
     "lodash": "^4.16.2",
+    "excel4node": "^1.2.1",
     "jasmine-core": "~2.5.2",
     "protractor": "4.0.9",
     "webdriver-manager": "10.2.5",
     "rimraf": "^2.5.4",
 
     "weird-reporter": "git://github.com/M2JS/weird-reporter.git",
+    "xlsx-reporter": "c:/Users/Maryia_Piarshai/workspace/xlsx_reporter/",
 
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.45",
