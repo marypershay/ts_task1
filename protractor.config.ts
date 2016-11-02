@@ -26,7 +26,7 @@ exports.config = {
     let browser: ProtractorBrowser = globals.browser;
     // let Reporter = require('weird-reporter');
     // jasmine.getEnv().addReporter(new Reporter( browser.params ));
-    let Reporter_xlsx = require('xlsx_reporter');
+    let Reporter_xlsx = require('xlsx-reporter');
     jasmine.getEnv().addReporter(new Reporter_xlsx( browser.params ));
   },
 
