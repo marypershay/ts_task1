@@ -5,7 +5,10 @@ exports.config = {
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
-    'browserName': 'chrome'
+    'browserName': 'chrome',
+    chromeOptions : {
+      args: ['start-maximized','--disable-extensions']
+    }
   },
 
   // Framework to use. Jasmine is recommended.
@@ -26,8 +29,10 @@ exports.config = {
     let browser: ProtractorBrowser = globals.browser;
     // let Reporter = require('weird-reporter');
     // jasmine.getEnv().addReporter(new Reporter( browser.params ));
-    let Reporter_xlsx = require('xlsx-reporter');
-    jasmine.getEnv().addReporter(new Reporter_xlsx( browser.params ));
+    // let Reporter_xlsx = require('xlsx-reporter');
+    // jasmine.getEnv().addReporter(new Reporter_xlsx( browser.params ));
+    let Reporter_html = require('html-reporter');
+    jasmine.getEnv().addReporter(new Reporter_html( browser.params ));
   },
 
   jasmineNodeOpts: {
